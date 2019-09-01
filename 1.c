@@ -11,14 +11,6 @@ int main()
     for (i = 1; i < 10; i++)
         scanf(", %d", &num[i]); /* reading formatted input from console */
 
-    for (i = 0; i < 10; i++)
-    {
-        if (isdigit(num[i]) != 0)
-        {
-            num[c] = (int)(num[i] - '0');
-            c++;
-        }
-    }
 
     for (i = 9; i >= 0; i--) /* printing in reverse order */
     {
@@ -28,3 +20,4 @@ int main()
 
     return 0;
 }
+

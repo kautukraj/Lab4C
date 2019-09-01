@@ -7,7 +7,7 @@ int main()
 {
 
     int num[10];
-    int i, c = 1, find = 0, flag = 0;
+    int i, c = 0, find = 0, flag = 0;
     scanf("%d", &num[0]);
     for (i = 1; i < 10; i++)
         scanf(", %d", &num[i]);
@@ -30,7 +30,12 @@ int main()
             l = mid + 1;
     }
 
-    printf("%d %d", flag, c); /* printing truth value and number of comparisons made */
+    if (flag==1)
+        printf("%d %d", flag, c);
+
+    else
+        printf("%d %d", flag,(c+1));
+
 
     return 0;
 }
